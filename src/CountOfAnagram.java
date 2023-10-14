@@ -5,9 +5,9 @@ public class CountOfAnagram {
     public static void main(String args[]){
         String InStr="aabaabaa";
         String str="aaba";
-        int i=0,j=0, count=0, ans=0;
+        int i=0,j=0, count, ans=0;
 
-        HashMap<Character, Integer> hm= new HashMap<Character, Integer>();
+        HashMap<Character, Integer> hm= new HashMap<>();
 
         for(int k=0;k<str.length();k++){
             if(hm.containsKey(str.charAt(k)))
@@ -17,9 +17,9 @@ public class CountOfAnagram {
         }
         count=hm.size();
         // traversing through the hashmap
-        for(Map.Entry<Character,Integer> e :hm.entrySet())
-            System.out.println(e.getKey()+ " : " + e.getValue());
-            System.out.println("Size of hash map - " + count);
+  /*      for(Map.Entry<Character,Integer> e :hm.entrySet())
+            System.out.println(e.getKey()+ " : " + e.getValue());*/
+            System.out.println("Size of hash mapppppppp - " + count);
         System.out.println("Length of anagram string - " + str.length());
 
         while(j<InStr.length()){
